@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+
+<h:head>
+    <title>Primefaces Google Charts</title>
+</h:head>
+
+<h:body>
+    <p:panel header="Login">
+
+        <p:growl>
+            <p:autoUpdate/>
+        </p:growl>
+
+        <h:form>
+            <p:outputLabel value="#{loginBean.applicationResources.projectStage}" />
+            <br/>
+            <p:outputLabel value="#{loginBean.applicationResources.nomeProjeto}" />
+            <br/>
+            <p:outputLabel value="#{loginBean.applicationResources.versao}" />
+            <br/>
+            <p:inputText id="email" placeholder="email" value="#{loginBean.email}"/>
+            <p:inputText id="senha" placeholder="senha" value="#{loginBean.senha}"/>
+            <p:commandButton value="login" process="@this email senha" action="#{loginBean.login()}"/>
+            <p:commandButton value="prepara" process="@this" action="#{loginBean.preparaSistema()}"/>
+        </h:form>
+
+    </p:panel>
+</h:body>
+
+</html>
