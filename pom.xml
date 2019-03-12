@@ -3,10 +3,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.fwtj</groupId>
-    <artifactId>JsfDeltaspikeTenantEntityManager</artifactId>
+    <artifactId>JsfDeltaspikeMultiTenantEntityManager</artifactId>
     <packaging>war</packaging>
     <version>v1</version>
-    <name>JsfDeltaspikeTenantEntityManager</name>
+    <name>JsfDeltaspikeMultiTenantEntityManager</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
